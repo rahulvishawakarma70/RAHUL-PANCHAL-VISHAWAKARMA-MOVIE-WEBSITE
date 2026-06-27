@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="main-header">
+
+<h1>RAHUL MOVIES</h1>
+
+<p>Watch & Download Movies</p>
+
+</div>
+
+
+<a class="btn" href="/upload">
+Upload Movie
+</a>
+
+
+{% for m in movies %}
+
+<div class="card">
+
+<h2>{{m[1]}}</h2>
+
+<a class="btn"
+href="/watch/{{m[0]}}">
+Watch
+</a>
+
+</div>
+
+
+{% endfor %}
+
+
+</body>
+</html>
